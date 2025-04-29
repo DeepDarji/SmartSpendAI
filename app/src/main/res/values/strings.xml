@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">SmartSpend AI</string>
+    <string name="login_welcome">Expense tracking powered by AI</string>
+    <string name="hint_email">Email</string>
+    <string name="hint_password">Password</string>
+    <string name="btn_login">LOGIN</string>
+    <string name="register_prompt">Don\'t have an account? Register</string>
+    <string name="add_expense">Add New Expense</string>
+    <string name="voice_prompt">Tap mic to add expense</string>
+    <string name="add_new_expense">Add New Expense</string>
+    <string name="tap_mic_to_add_expense">Tap mic to add expense</string>
+    <string name="smartspend_ai">SMARTSPEND AI</string>
+    <string name="expense_tracking_powered_by_ai">Expense tracking powered by AI</string>
+</resources>
