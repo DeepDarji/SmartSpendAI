@@ -40,21 +40,4 @@ dependencies {
     implementation libs.appcompat.v161
     implementation libs.material.v190
     implementation libs.constraintlayout.v214
-
-    implementation 'androidx.appcompat:appcompat:1.6.1'
-    implementation 'com.google.android.material:material:1.9.0'
-    implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
-
-    // Voice recognition
-    implementation 'com.google.android.gms:play-services-speech:20.4.0'
-
-    // Room Database
-    implementation "androidx.room:room-runtime:2.5.2"
-    annotationProcessor "androidx.room:room-compiler:2.5.2"
-
-    // Chart library
-    implementation 'com.github.PhilJay:MPAndroidChart:v3.1.0'
-
-    // Lottie animations
-    implementation 'com.airbnb.android:lottie:6.0.0'
 }

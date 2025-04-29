@@ -1,55 +1,27 @@
-<?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/black"
-    tools:context=".activities.MainActivity">
+    android:padding="16dp">
 
-    <com.google.android.material.card.MaterialCardView
+    <Button
+        android:id="@+id/btnVoiceInput"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_margin="16dp"
-        app:cardBackgroundColor="@color/card_background"
-        app:cardCornerRadius="16dp"
-        app:cardElevation="8dp">
+        android:text="Start Voice Input" />
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:padding="24dp">
+    <TextView
+        android:id="@+id/txtResult"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Your expense will appear here..."
+        android:textSize="18sp"
+        android:paddingTop="16dp"/>
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/add_new_expense"
-                android:textColor="@color/neon_blue"
-                android:textSize="18sp"
-                android:textStyle="bold"/>
-
-            <TextView
-                android:id="@+id/tvVoiceResult"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="16dp"
-                android:text="@string/tap_mic_to_add_expense"
-                android:textColor="@color/white"
-                android:textSize="16sp"/>
-
-            <ImageButton
-                android:id="@+id/btnMic"
-                android:layout_width="60dp"
-                android:layout_height="60dp"
-                android:layout_gravity="center_horizontal"
-                android:layout_marginTop="24dp"
-                android:background="?attr/selectableItemBackgroundBorderless"
-                android:src="@drawable/ic_mic"
-                app:tint="@color/neon_blue" />
-        </LinearLayout>
-    </com.google.android.material.card.MaterialCardView>
-
-    <!-- Add more UI elements here for expense list, charts etc. -->
-
-</RelativeLayout>
+    <ListView
+        android:id="@+id/listExpenses"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"/>
+</LinearLayout>
